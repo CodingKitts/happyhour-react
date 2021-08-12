@@ -5,6 +5,7 @@
  * Happy Hour component will be visible.
  */
 
+import { FaMap } from "react-icons/all"
 //TODO: Add a button icon that will pull up google maps directions for the Happy Hour Location.
 //TODO: Incorporate the distance from the User Address to the Venue in this view.
 
@@ -12,7 +13,7 @@
 const HappyHourMin = ({ special }) => {
     return (
         <div className='happyhour'>
-            <h3>{special.venueName}</h3>
+            <h3>{special.venueName} <FaMap /></h3>
             <p>{special.venueAddress}</p>
         </div>
     )

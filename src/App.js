@@ -1,6 +1,7 @@
 import { useState} from "react";
 
 import HappyHours from "./components/HappyHours";
+import SearchHappyHours from "./components/SearchHappyHours";
 
 function App() {
     const [happyHours, setHappyHours] = useState([
@@ -41,6 +42,8 @@ function App() {
     return (
         <div className="App">
             <HappyHours specials={happyHours}/>
+
+            <SearchHappyHours />
         </div>
     );
 }

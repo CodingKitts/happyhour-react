@@ -1,6 +1,14 @@
-const SearchHappyHours = () => {
+const SearchHappyHours = ({ searchHappyHours }) => {
+
+    const onSubmit = (e) => {
+        e.preventDefault()
+
+        //TODO: DO data validation here.
+
+        searchHappyHours()
+    }
     return (
-        <form className='search-happy-hours'>
+        <form className='search-happy-hours' onSubmit={searchHappyHours}>
             <div className='form-control'>
                 <label>Address</label>
                 <input type='text' placeholder='Enter your street address...'/>

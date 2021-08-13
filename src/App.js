@@ -39,11 +39,15 @@ function App() {
         }
     ])
 
+    const fetchHappyHours = (happyHour) => {
+        console.log(happyHour);
+    }
+
     return (
         <div className="App">
             <HappyHours specials={happyHours}/>
 
-            <SearchHappyHours />
+            <SearchHappyHours onSubmit={fetchHappyHours}/>
         </div>
     );
 }
